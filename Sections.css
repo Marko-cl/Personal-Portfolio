@@ -64,7 +64,7 @@ text-shadow: 0 0 10px #ffffff;
     width: 100%;
     background-color: beige;
     height: 1200px;
-    background-image: url(/pics/background1.jpg);
+    background-image: url(pics/background1.jpg);
 object-fit: cover;
  display: flex;
   justify-content: center;
