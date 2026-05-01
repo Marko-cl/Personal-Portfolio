@@ -1,0 +1,28 @@
+   
+    body{
+        background-color: #ffffff;
+       
+        color: #e1e2e2;
+    margin: 0;
+    padding: 0;
+    font-family:  garamond light;
+  
+    
+    
+    }
+    p{
+        font-family: helvetica;
+    }
+
+
+
+.arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: 0.5s;
+}
+
+.arrow:hover {
+    scale: 1.05;
+}

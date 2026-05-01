@@ -1,0 +1,387 @@
+
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color: #ffffff;
+       
+        color: #e1e2e2;
+    margin: 0;
+    padding: 0;
+    font-family:  garamond light;
+    transition: 0.5s;
+    
+    }
+    p{
+        font-family: helvetica;
+    }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   box-sizing: border-box;
+    background: rgb(0, 0, 0,0.5);
+    color: white;
+    backdrop-filter: blur(15px);
+    padding-right: 15%;
+    transition: 0.5s;
+   
+    box-shadow: 0px 0px 10px 1px rgb(255, 255, 255);
+    overflow: hidden;
+    position: sticky;
+     top: 0;
+  width: 100%;
+  z-index: 100;
+  
+}
+.nav_links{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.nav_links li a{
+    text-decoration: none;
+    color: #e1e2e2;
+    position: relative;
+    transition: 0.3s;
+    padding: 2px;
+    font-size:20px ;
+}
+.nav_links li a:hover{
+color: darkcyan;
+text-shadow: 0 0 10px #ffffff;
+
+}
+
+.Name{
+    color: #ffffff;
+    font-size: 150%;
+    padding-left: 7%;
+}
+
+/* container-imazhi background section1*/
+.container1{
+    width: 100%;
+    background-color: beige;
+    height: 1200px;
+    background-image: url(/pics/background1.jpg);
+object-fit: cover;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px gray;
+ 
+  
+  
+}
+
+/* container-container i qenderzuar per imazhin dhe tekstin*/
+
+.center-main{
+    display: flex;
+    background-color: rgb(0, 0, 0,0.9);
+   width: 75%;
+   height: 75%;
+   box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
+   
+}
+.center-main div{
+    width: 50%;
+    
+}
+
+.text-main{
+   padding: 50px;
+overflow-wrap:break-word;
+word-break:break-word;
+
+overflow: hidden;
+}
+
+.text-main h1{
+    font-size:4em;
+}
+
+.text-main p{
+    font-size: 1.5em;
+}
+
+.img-main{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;   
+    height: 100%;
+    width: 100%;
+    
+  }
+
+ .img-main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: 1s;
+ }
+
+ .img-main img:hover{
+    opacity: 1;
+    scale: 110%;
+ }
+
+
+
+
+ /*Section2*/
+
+
+ 
+
+
+
+.sec23{
+      background-image: radial-gradient(rgb(48, 48, 48), rgb(27, 27, 27), black);
+    min-height: 100vh;
+      transition: 0.5s;
+}
+
+
+
+.container2{
+   
+
+    height: 800px;
+    width: 100%;
+   background: transparent;
+   
+}
+.main-div{
+display: flex;
+flex-direction: column;
+
+height: 85%;
+padding: 20px;
+}
+.skillsdiv{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: 100%;
+}
+
+
+.skillsdiv div{
+    width: 100%;
+    border: solid 1px white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px white;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px);
+    overflow-wrap:break-word;
+word-break:break-word;
+padding: 10px;
+overflow: hidden;
+
+    
+}
+
+
+
+.headersk{
+    text-align: center;
+    font-size: 20px;
+    width: fit-content;
+    transition: 0.5s;
+}
+.headersk:hover{
+    color: darkcyan;
+    cursor: pointer;
+    
+}
+
+
+.Proglang img{
+height: 50px;
+width: 50px;
+
+}
+.Proglang p{
+    word-spacing: 100px;
+}
+.Tech p {
+    word-spacing: 100px;
+}
+.Tech img{
+height: 50px;
+width: 50px;
+
+}
+.Soft ul{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.Soft ul li{
+font-size: 20px;
+
+}
+section {
+overflow: hidden;
+}
+
+/*Section3*/
+
+
+
+.container3{
+    width: 100%;
+    height: 600px;
+        border-bottom:solid 1px gray;
+      background: transparent;
+}
+
+
+.Projects{
+  padding-top: 75px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    height: 100%;
+   padding-left: 20px;
+   padding-right: 20px;
+   
+}
+
+.Project{
+   
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-wrap:break-word;
+word-break:break-word;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.project1{
+    background-image: url(pics/discor.png);
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    transition: 0.5s;
+    border-radius: 10px;
+    filter: grayscale(100%);
+}
+
+.project2{
+    background-image: url(pics/godo.jfif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    filter: grayscale(100%);
+    height: 50%;
+}
+.project3{
+    background-image: url(pics/front.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 50%;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover{
+    scale: 1.05;
+    filter: grayscale(0%);
+  
+}
+
+
+
+/*Section4*/
+.container4 {
+background-color: black;
+height: 175px;
+width: 100%;
+}
+
+.container4 footer {
+display: flex;
+flex-direction: column;
+height: 90%;
+
+padding: 20px;
+
+}
+
+.contactinfo {
+display: flex;
+flex-direction: row;
+height: 100%;
+width: 100%;
+
+}
+
+.contactinfo div {
+width: 100%;
+height: 100%;
+padding: 0px;
+text-align: center;
+
+
+}
+
+
+.copyright{
+    text-align: center;
+}
+.info1 p{
+font-size: 20px;
+}
+.info2{
+    text-align: center;
+border-left: solid 1px white;
+border-right: solid 1px white;
+}
+.info2 hr{
+width: 50%;
+
+}
+
+
+.info3 img{
+    height: 50px;
+    width: 50px;
+    transition: 0.5s;
+}
+
+
+.info3 img:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+
+.modes {
+position: fixed;
+right: 20px;
+bottom: 50px;
+width: 60px;
+height: 60px;
+background: transparent;
+border:solid 1px rgb(255, 255, 255);
+border-radius: 50%;
+z-index: 1000;
+}
+.modes:hover{
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,182 @@
+<html>
+
+<head>
+    <title>Personal Portfolio-About me</title>
+    <link rel="icon" href="pics/person.png">
+   <link rel="stylesheet" href="Project1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+
+
+
+
+<body>
+<section class="Section1">
+    <a href="main.html">
+        <img class="arrow" src="pics/leftarrow.png">
+    </a>
+
+    <h1 style="color: #5865f2; font-size: 45px;">
+        Discord Economy Bot
+    </h1>
+
+    <p style="color: #7452ac; font-size: 30px;">
+        Development Showcase
+    </p>
+
+    <p style="font-size: 15px; color: #93a0a0;">
+        Built with modern JavaScript, Node.js, and advanced programming concepts
+    </p>
+
+    
+</section>
+
+
+
+<section class="Section2">
+<h1 style="font-size: 40px;color: #7452ac;">Kelonomy Discord Bot Development</h1>
+<p style="font-size: 20px;color: #93a0a0;">Feature-rich economy bot built with discord.js and MongoDB</p>
+
+<div class="road">
+
+
+<div class="box">
+<h1>Project Setup & Dependencies</h1>
+<p>Built with Node.js v18+, discord.js v14, and MongoDB integration. Modern slash commands only (no prefix commands). Environment variables for security.</p>
+</div>
+
+<div class="box">
+    <h1>Core Architecture</h1>
+<p>Modular cogs system with separate modules for economy, shop, games, and social features. MongoDB helper (db.js) for database operations.</p>
+</div>
+<div class="box">
+    <h1>Economy System Implementation</h1>
+<p>Balance, daily rewards, work, beg, leaderboard, inventory, and profile systems. All with input validation and rate limiting.</p>
+</div>
+
+
+
+<div class="box">
+    <h1>Games & Social Features</h1>
+<p>Quiz, slots, duel, heist, bet, party, quest games. Trade, gift, rob social interactions. All slash commands with cooldowns.</p>
+</div>
+<div class="box">
+    <h1>Security & Testing</h1>
+<p>Jest unit testing, input validation, rate limiting, permission checks, error logging, and security best practices implementation.</p>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+</section>
+<section class="Section3">
+<h1 style="font-size: 40px;color: #7452ac;">Bot Features & Implementation</h1>
+<p style="font-size: 20px;color: #93a0a0;">Complete economy system with games and social features</p>
+
+<div class="grid-wrapper">
+<div class="grid-layout">
+<div class="boxes">
+<img src="Discord/valid.png">
+<h1>Modern Slash Commands</h1>
+<p>All commands use discord.js v14 slash commands with proper validation, rate limiting (10 commands/10s per user), and permission checks.</p>
+</div>
+
+
+<div class="boxes"><img src="Discord/economy.png">
+<h1>Complete Economy</h1>
+<p>Balance, daily rewards, work, beg, leaderboard, inventory, and profile systems with MongoDB persistence and input validation.</p></div>
+
+
+<div class="boxes"><img src="Discord/shop.png">
+<h1>Dynamic Shop</h1>
+<p>View shop, buy items with MongoDB integration. Extensible item system with effects and categories managed through constants.js.</p></div>
+
+
+<div class="boxes"><img src="Discord/games.png">
+<h1>Interactive Games</h1>
+<p>Quiz, slots, duel, heist, bet, party, quest games with proper cooldowns, validation, and fair random number generation.</p></div>
+
+
+<div class="boxes"><img src="Discord/trade.png">
+<h1>Social Interactions</h1>
+<p>Trade, gift, rob commands with proper validation, permission checks, and audit logging for all sensitive operations.</p></div>
+
+
+<div class="boxes"><img src="Discord/security.png">
+<h1>Security & Testing</h1>
+<p>Jest unit testing, npm audit for dependencies, input sanitization, rate limiting, and comprehensive error logging with logger.js.</p></div>
+
+
+
+</div>
+</div>
+
+
+
+</section>
+<section class="Section4">
+<h1 style="font-size: 40px;color: #7452ac;">Security Best Practices</h1>
+<p style="font-size: 20px;color: #93a0a0;">Enterprise-grade security implementation</p>
+
+<div class="grid-wrapper2">
+<div class="grid-layout2">
+<div class="boxes2">
+<i class="fas fa-shield-alt"></i>
+<h1>Input Validation & Sanitization</h1>
+<p>All user input validated using utilities: isSafeDiscordId, validateNumber, validateString, sanitizeString. Every command has validation sections.</p>
+</div>
+
+
+<div class="boxes2"><i class="fas fa-lock"></i>
+<h1>Environment Variables</h1>
+<p>Never commit .env files. All tokens, database URIs, and webhooks use environment variables with proper .gitignore protection.</p></div>
+
+
+<div class="boxes2"><i class="fas fa-clock"></i>
+<h1>Rate Limiting & Permissions</h1>
+<p>Global rate limiting (10 commands/10s per user). Admin commands require owner permissions. Minimal Discord permissions granted.</p></div>
+
+
+<div class="boxes2"><i class="fas fa-database"></i>
+<h1>Database Security</h1>
+<p>MongoDB with IP whitelisting, restricted user permissions, regular backups, and all operations wrapped in try/catch blocks.</p></div>
+
+
+<div class="boxes2"><i class="fas fa-bug"></i>
+<h1>Dependency Safety</h1>
+<p>Regular npm audit checks, updated dependencies, only well-maintained packages, no deprecated or untrusted libraries.</p></div>
+
+
+<div class="boxes2"><i class="fas fa-file-alt"></i>
+<h1>Logging & Monitoring</h1>
+<p>Comprehensive logging with logger.js, error redaction for sensitive data, Discord webhook alerts for critical errors.</p></div>
+
+
+
+</div>
+</div>
+
+
+</section>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
