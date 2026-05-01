@@ -26,3 +26,135 @@
 .arrow:hover {
     scale: 1.05;
 }
+
+
+.Section1{
+    height: 800px;
+    background-color: #121212;
+}
+
+
+.Split-section1{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: 100%;
+}
+.Split-section1 div{
+    width: 100%;
+   
+    padding: 30px;
+}
+
+
+.text {
+   display: flex;
+  flex-direction: column;   
+  justify-content: center;  
+  
+  height: 100%;           
+
+
+}
+
+.image{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.image img{
+    height: 100px;
+    width: 300px;
+   
+    transition: 0.5s;
+}
+
+
+.image img:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+
+
+.Section2{
+    height: 600px;
+    background-color: #1a1a1a;
+}
+
+
+.Split-section2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.Split-section2 div{
+    width: 100%;
+   
+    padding: 30px;
+}
+.text2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.Section4{
+     height: 1000px;
+    width: 100%;
+   background-color: #111111;
+   overflow: hidden;
+ 
+ text-align: center;
+}
+
+
+.grid-wrapper2{
+    width: 100%;
+    height: 86%;
+    display: grid;
+    place-items: center;
+
+}
+
+
+.grid-layout2{
+    width: 75%;
+    height: 90%;
+  
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 30px;
+}
+
+.boxes2{
+     background-color: #1a1a1a;
+    border: solid 1px #333333;
+    padding: 30px;
+    word-wrap: break-word;
+    
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    
+    transition: 0.5s;
+}
+
+.boxes2:hover{
+       border-color:#478cbf ;
+    box-shadow: 0px 0px 15px 0.5px #478cbf;
+}
+
+.boxes2 h1{
+    color:#478cbf;
+}
+.boxes2 p{
+    color: white;
+}
