@@ -41,41 +41,40 @@
 }
 
 .Section2{
-    height: 900px;
+    height: fit-content;
     width: 100%;
     background-color: #111111;
    overflow: hidden;
  
  text-align: center;
 }
-.road{
-    
-   gap: 40px;
-     display: grid;
-grid-template-columns: repeat(6,1fr);
 
 
-padding: 50px 0;
-}
-.box:nth-child(1) {
-    grid-column: 1 / 3;
+.road {
+  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 50px 0;
 }
 
-.box:nth-child(2) {
-    grid-column: 3 / 5;
-}
+.box:nth-child(1) { grid-column: 1 / 3; }
+.box:nth-child(2) { grid-column: 3 / 5; }
+.box:nth-child(3) { grid-column: 5 / 7; }
+.box:nth-child(4) { grid-column: 2 / 4; }
+.box:nth-child(5) { grid-column: 4 / 6; }
 
-.box:nth-child(3) {
-    grid-column: 5 / 7;
-}
+@media (max-width: 600px) {
+  .road {
+    grid-template-columns: 1fr;
+  }
 
-
-.box:nth-child(4) {
-    grid-column: 2 / 4;
-}
-
-.box:nth-child(5) {
-    grid-column: 4 / 6;
+  .box:nth-child(1),
+  .box:nth-child(2),
+  .box:nth-child(3),
+  .box:nth-child(4),
+  .box:nth-child(5) {
+    grid-column: auto;
+  }
 }
 
 
@@ -110,17 +109,17 @@ padding: 50px 0;
 
 
 .Section3{
-    height: 1100px;
+    height: fit-content;
     width: 100%;
     background-color: black;
    overflow: hidden;
- 
+ padding-bottom: 100px;
  text-align: center;
 }
 
 .grid-wrapper{
     width: 100%;
-    height: 86%;
+    height: 100%;
     display: grid;
     place-items: center;
 
@@ -137,12 +136,25 @@ padding: 50px 0;
     gap: 30px;
 }
 
+@media(max-width:600px){
+.grid-layout{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.Section3{
+    
+ padding-bottom: 200px;
+ 
+}
+}
+
 .boxes{
      background-color: #1a1a1a;
     border: solid 1px #333333;
     padding: 20px;
     word-wrap: break-word;
-    
+    box-sizing: border-box;
     border-radius: 10px;
     height: 380px;
     width: 350px;
@@ -177,18 +189,19 @@ padding: 50px 0;
 
 
 .Section4{
-     height: 1000px;
+     height: fit-content;
     width: 100%;
    background-color: #111111;
    overflow: hidden;
- 
+ padding-bottom: 100px;
  text-align: center;
 }
 
 
 .grid-wrapper2{
     width: 100%;
-    height: 86%;
+    height: 100%;
+    
     display: grid;
     place-items: center;
 
@@ -205,15 +218,28 @@ padding: 50px 0;
     gap: 30px;
 }
 
+@media(max-width:600px){
+.grid-layout2{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.Section4{
+    padding-bottom: 200px;
+}
+}
+
+
+
+
 .boxes2{
      background-color: #1a1a1a;
     border: solid 1px #333333;
     padding: 30px;
     word-wrap: break-word;
-    
+    box-sizing: border-box;
     border-radius: 10px;
     height: 300px;
-    width: 300px;
+    width: 400px;
     
     transition: 0.5s;
 }
