@@ -7,14 +7,21 @@
     padding: 0;
     font-family:  garamond light;
     
-    overflow: hidden;
+   
     
     }
     p{
         font-family: helvetica;
     }
 
-
+@media (max-width:600px) {
+    .arrow{
+        display: none;
+    }
+    .Section1{
+        height: fit-content;
+    }
+}
 .arrow{
     position:fixed;
     top: 20px;
@@ -23,4 +30,132 @@
 }
 .arrow:hover{
     scale: 1.05;
+}
+
+
+.Section1{
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    background-color: rgb(19, 18, 18);
+    height: 800px;
+    width: 100%;
+}
+
+.div1{
+    text-align: center;
+}
+.div1 p{
+    display: inline-block;
+}
+.div1 p:hover{
+    cursor: pointer;
+}
+.div2 {
+     grid-column-start: 1;
+    grid-row-start: 2;
+    text-align: center;
+    color: gray;
+}
+
+
+
+
+.div5 {
+     grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+  
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+
+.div5 span{
+    color: gray;
+}
+
+
+
+/*section2*/
+
+
+.Section2 {
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    height: fit-content;
+    width: 100%;
+    background-color: #080808;
+}
+    
+.Sdiv1{
+    text-align: center;
+}
+.Sdiv2 {
+ grid-column-start: 1;
+    grid-row-start: 2;
+    text-align: center;
+    font-size:clamp(1.25rem, -0.057rem + 5.08vw, 3.75rem);
+}
+
+.Sdiv3 {
+       grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.Section3{
+   background-color: rgb(19, 18, 18);
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.Section3 img{
+height: 100%;
+width: 100%;
+padding: 100px;
+
+box-sizing: border-box;
+}
+
+
+.Section4{
+    height: fit-content;
+    width: 100%;
+    background-color: #080808;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.divs4{
+    margin: 100 0 100 0;
+    height: 350px;
+    width: 250px;
+   border: 1px solid #242424;
+   padding: 20px;
+   transition: 0.5s;
+}
+
+.divs4:hover{
+    background-color: #222222;
 }
